@@ -12,8 +12,14 @@
 (function() {
 
     document.getElementById("run").addEventListener("click", function() {
+    let squareNumbers= [];
+        for (let i=1; i<=21; i++){
+          if (Math.sqrt(i) %1 === 0){
+              squareNumbers.push(i);
+          }
+        }
+        alert(squareNumbers);
 
-        // your code here
 
     });
 
