@@ -9,8 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+function fizzbuzz() {
+    for (let i = 1; i <= 100; i++) {
+        let empty = "";
+        if (i % 3 === 0) empty += "fizz";
+        if (i % 5 === 0) empty += "buzz";
 
-    // your code here
+        console.log(i+" "+ empty || i);
+    }
+}
+fizzbuzz()
 
-})();
+
+
+
+

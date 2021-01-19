@@ -9,14 +9,24 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-    
-    // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function() {
+document.getElementById("run").addEventListener("click", faktorial);
 
-        // your code here
+function faktorial() {
+    let number = document.getElementById("number").value;
+    let result = 1;
 
-    });
+    while (number > 0) {
+        result *= number;
+        number = number - 1;
+    }
+    alert(result)
 
-})();
+}
+
+
+
+
+
+
+

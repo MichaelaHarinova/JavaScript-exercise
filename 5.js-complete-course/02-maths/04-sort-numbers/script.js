@@ -9,14 +9,33 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+//function sort() {
 
-    // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function() {
+//  num.sort();
+//  document.getElementById("numbers").innerHTML = num;
 
-        // your code here
+function ascendingSort() {
+    let num = document.getElementById("numbers").value;
+    let stringA = num.split(', ');
+    console.log(stringA);
 
+    let int = [];
+    for (let i = 0; i < stringA.length; i++) {
+        int[i] = parseInt(stringA[i]);
+    }
+    console.log(int);
+
+    int.sort(function (a, b) {
+        return (a - b)
     });
+    alert(int);
 
-})();
+}
+
+document.getElementById("run").addEventListener("click", ascendingSort);
+
+
+
+
+
