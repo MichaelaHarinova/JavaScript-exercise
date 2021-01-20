@@ -9,8 +9,14 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
+function color(colorName) {
 
-})();
+           document.body.style.backgroundColor = colorName;
+}
+
+Array.from(document.querySelectorAll("button")).forEach(function ($btn) {
+    $btn.addEventListener("click", function () {
+        color($btn.id);
+    });
+});
