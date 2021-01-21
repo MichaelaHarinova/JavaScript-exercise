@@ -9,4 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+(function () {
+    let options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
 
+    document.getElementById("target").innerHTML = (new Date().toLocaleTimeString("en-GB", options));
+
+})();
