@@ -9,9 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+document.getElementById("run").addEventListener("click", function () {
 
-    var people = [
+    let people = [
         {
             firstname: "Grenville",
             lastname: "Stive",
@@ -89,6 +89,6 @@
         },
     ];
 
-    // your code here
+    console.log(people.reduce((a, b) =>{ return {age: a.age + b.age}}));
 
-})();
+});

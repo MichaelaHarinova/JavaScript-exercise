@@ -9,9 +9,10 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    var fruits = [
+document.getElementById("run").addEventListener("click", function () {
+
+    let fruits = [
         "apple",
         "perry",
         "strawberry",
@@ -26,6 +27,10 @@
         "cherry",
     ];
 
-    // your code here
+        if (fruits.find(item => item === "apple") === "apple") {
+            console.log("yes");
+        } else {
+            console.log("no");
+        }
 
-})();
+});

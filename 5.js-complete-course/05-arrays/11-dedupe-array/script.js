@@ -9,9 +9,10 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+document.getElementById("run").addEventListener("click", squash)
+function squash(){
 
-    var fruits = [
+    let fruits = [
         "cerise",
         "durian",
         "pomme",
@@ -28,6 +29,16 @@
         "cerise",
     ];
 
-    // your code here
 
-})();
+
+        let result = [];
+        for(let i = 0; i < fruits.length; i++){
+            if(result.indexOf(fruits[i]) === -1){
+                result.push(fruits[i]);
+            }
+        }
+        console.log(result) ;
+    }
+
+
+
