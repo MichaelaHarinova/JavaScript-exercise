@@ -9,8 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
+let hoverSource = document.querySelector("img").getAttribute("data-hover");
+let originalSource = document.querySelector("img").getAttribute("src");
 
-})();
+document.querySelector("img").addEventListener("mouseover", event => event.target.setAttribute('src', hoverSource));
+document.querySelector("img").addEventListener("mouseout", event => event.target.setAttribute('src', originalSource));
+
+
+
+

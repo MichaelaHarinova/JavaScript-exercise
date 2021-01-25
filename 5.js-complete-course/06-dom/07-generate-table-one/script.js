@@ -11,6 +11,10 @@
 
 (function() {
 
-    // your code here
+   let table= document.createElement("table");
 
+   document.getElementById("target").appendChild(table);
+   for (let i=0 ; i<10; i++){
+       table.appendChild(document.createElement("tr"));
+   }
 })();
