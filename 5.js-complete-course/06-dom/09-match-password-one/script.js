@@ -9,8 +9,12 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
+document.getElementById("run").addEventListener("click", () => {
+    let firstInput = document.getElementById("pass-one").value;
+    let secondInput = document.getElementById("pass-two").value;
 
-})();
+    if (firstInput !== secondInput) {
+   document.querySelectorAll("input").forEach(input=>input.style.borderColor = "red");
+    }
+});

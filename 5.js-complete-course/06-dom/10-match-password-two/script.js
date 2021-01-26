@@ -11,6 +11,13 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        let firstInput = document.getElementById("pass-one").value;
+        let secondInput = document.getElementById("pass-two").value;
 
+
+        if (firstInput !== secondInput) {
+            document.querySelectorAll("input").forEach(input=>input.classList.add("error"));
+        }
+    });
 })();
