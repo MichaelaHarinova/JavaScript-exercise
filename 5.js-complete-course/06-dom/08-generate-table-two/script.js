@@ -21,7 +21,8 @@
         //j= column
         for (let j = 0; j < 10; j++) {
             let td = document.createElement("td");
-            td.innerText = (i + 1) * (j + 1);
+
+            td.innerText = ((i + 1) * (j + 1)).toString();
             tr.appendChild(td);
         }
     }
