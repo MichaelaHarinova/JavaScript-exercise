@@ -17,7 +17,7 @@
 
 function ascendingSort() {
     let num = document.getElementById("numbers").value;
-    let stringA = num.split(', ');
+    let stringA = num.split(', ');//divide every number with a comma and space
     console.log(stringA);
 
     let int = [];
@@ -27,7 +27,7 @@ function ascendingSort() {
     console.log(int);
 
     int.sort(function (a, b) {
-        return (a - b)
+        return (a - b) //sort from low to high, b-a high to low
     });
     alert(int);
 

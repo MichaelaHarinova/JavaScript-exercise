@@ -18,7 +18,7 @@ function showAge() {
     //today-date
     let today = new Date();
     let todayYear = today.getFullYear();
-    let todayMonth = today.getMonth();
+    let todayMonth = today.getMonth()+1;
     let todayDate = today.getDate();
 
     //Difference
@@ -31,8 +31,8 @@ function showAge() {
     } else if (todayMonth > dobMonth) {
         age = ageYear;
     } else {
-        if (todayDate < dobMonth) {
-            age = ageYear - 1;
+        if (todayDate < dobDate) {
+            age = ageYear -1;
         } else {
             age = ageYear;
         }
@@ -43,5 +43,5 @@ function showAge() {
 
 document.getElementById("run").addEventListener("click", showAge);
 
-showAge()
+
 

@@ -11,7 +11,7 @@
 
 function color() {
 
-     document.body.style.backgroundColor = document.getElementById("color").value ;
+     document.body.style.backgroundColor = document.getElementById("color").value ;//.value is a property
 }
 document.getElementById("run").addEventListener("click", color);
 

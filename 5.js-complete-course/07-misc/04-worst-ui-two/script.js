@@ -12,16 +12,16 @@
 (function () {
 
 
-    document.querySelectorAll("button").forEach(button => button.addEventListener("click", event => {
-        let currentButtonText = event.target.innerText
-        let minValue = event.target.getAttribute("data-min")
-        let maxValue = event.target.getAttribute("data-max")
+    document.querySelectorAll("button").forEach(button => button.addEventListener("click", () => {
+        let currentButtonText = button.innerText
+        let minValue = button.getAttribute("data-min")
+        let maxValue = button.getAttribute("data-max")
         //   console.log(currentButtonText, maxValue, minValue)
 
         if (parseInt(currentButtonText) >= parseInt(minValue) && parseInt(currentButtonText) < parseInt(maxValue)) {
-            event.target.innerText = (parseInt(currentButtonText) + 1).toString().padStart(2, '0');
+            button.innerText = (parseInt(currentButtonText) + 1).toString().padStart(2, '0');
         } else {
-            event.target.innerText = minValue;
+            button.innerText = minValue;
         }
         document.getElementById("target").innerText ="+";
         document.querySelectorAll("button").forEach(button =>

@@ -33,7 +33,8 @@ function squash(){
 
         let result = [];
         for(let i = 0; i < fruits.length; i++){
-            if(result.indexOf(fruits[i]) === -1){
+            if(result.indexOf(fruits[i]) === -1){ //indexOf looks for the value that is specified in the parameter (fruits(i) => first fruit in the array, second, third...). Then return the position of that value in that array.
+                                                  //In this case in the result array. If it is there, it will return the position , if it is not there it will always return the -1.
                 result.push(fruits[i]);
             }
         }

@@ -10,25 +10,23 @@
 // You will have time to focus on it later.
 
 
+(function () {
+    console.log();
+    let h = new Date().getHours();
+    let m = new Date().getMinutes();
 
-    (function() {
-        console.log();
-        let h = new Date().getHours();
-        let m = new Date().getMinutes();
-
-        let text;
-        if(h===17) {
-           if(m>=30){
-               text = "Good evening!";
-           }
-        }
-        else if (h>17){
+    let text;
+    if (h === 17) {
+        if (m >= 30) {
             text = "Good evening!";
         }
-        else{
-            text = "Hello!";
-        }
-        document.getElementById("target").innerHTML = text;
-    })();
+    } else if (h >= 18) {  //condition for following hours 18-23. cOtherwise it would stop by reaching 18hour.
+        text = "Good evening!";
+
+    } else {
+        text = "Hello!";
+    }
+    document.getElementById("target").innerHTML = text;
+})();
 
 

@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 
-document.getElementById("run").addEventListener("click", faktorial);
+
 
 function faktorial() {
     let number = document.getElementById("number").value;
@@ -23,7 +23,7 @@ function faktorial() {
     alert(result)
 
 }
-
+document.getElementById("run").addEventListener("click", faktorial);
 
 
 

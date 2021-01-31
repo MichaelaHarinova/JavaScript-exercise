@@ -13,16 +13,16 @@
     document.getElementById("pass-one").addEventListener("input", (event) => {
 
 
-        let count = 0;
+        let amountOfNum = 0;
 
         for (let i = 0; i < event.target.value.length; i++) {
             let char = event.target.value.charAt(i);
             if (isNaN(parseInt(char))) {
             } else {
-                count++;
+                amountOfNum++;
             }
         }
-        if (event.target.value.length >= 8 && count >= 2) {
+        if (event.target.value.length >= 8 && amountOfNum >= 2) {
             document.getElementById("validity").innerText = "Ok";
         } else {
             document.getElementById("validity").innerText = "Not Ok";

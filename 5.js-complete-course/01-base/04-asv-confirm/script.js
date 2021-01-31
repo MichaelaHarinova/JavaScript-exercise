@@ -16,7 +16,7 @@ let gender= prompt("What gender are you?");
 let town= prompt("What town are you from?");
 
     let con= confirm("You have entered " + age +" years old " + gender +" and "+ " you live in " +town);
-    if (con !== true){
+    if (con !== true){ //if (!con) => if not confirm. Another way
     return(myFunction());
     } else {
         alert("thank you!")
